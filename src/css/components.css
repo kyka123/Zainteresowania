@@ -37,3 +37,15 @@
 .button:hover::before {
   transform: translate(3px, 3px);
 }
+
+.header {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin: 0.2em 0;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.2em 0;
+}
