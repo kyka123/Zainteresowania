@@ -1,0 +1,39 @@
+.button {
+  font-size: 1.6rem;
+  padding: 0.8em 2em;
+  cursor: pointer;
+  border: 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.button::after,
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  display: block;
+  transition: transform 0.2s;
+  z-index: -1;
+}
+
+.button::after {
+  transform: translate(3px, 3px);
+}
+
+.button::before {
+  transform: translate(-3px, -3px);
+}
+
+.button:hover::after {
+  transform: translate(-3px, -3px);
+}
+
+.button:hover::before {
+  transform: translate(3px, 3px);
+}
