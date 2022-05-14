@@ -1,0 +1,42 @@
+body {
+  background-color: #000;
+  height: 300vh;
+}
+
+.main {
+  width: 100vw;
+  top: calc(100vh - 300px);
+  position: fixed;
+  padding: 0 50px;
+}
+
+.main__header {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #fff;
+  height: 100%;
+  z-index: -1;
+  width: calc(100vw - 100px);
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.main__container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-section {
+  height: 100vh;
+  position: absolute;
+}

@@ -15,6 +15,10 @@
 
     <link rel="stylesheet" href="../css/globalStyle.css" />
     <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/pages/home.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
   </head>
 
   <body>
@@ -41,13 +45,15 @@
     </nav>
 
     <main class="main">
+      <div class="main__background"></div>
       <div class="main__header">
-        <h2 class="header--center">Start</h2>
+        <h2 class="header header--center">Start</h2>
       </div>
 
       <div class="main__container">
+        <!-- <button class="main__hamburger-menu"></button> -->
         <!-- main-section may appear somewhere in the website  -->
-        <section class="main-section">
+        <section class="main-section" id="section-1">
           <img class="main-section__image" />
           <div class="main-section__content">
             <h3 class="header">Programowanie</h3>
@@ -67,7 +73,7 @@
           </div>
         </section>
 
-        <section class="main-section">
+        <section class="main-section" id="section-2">
           <img class="main-section__image" />
           <div class="main-section__content">
             <h3 class="header">Muzyka</h3>
@@ -87,7 +93,7 @@
           </div>
         </section>
 
-        <section class="main-section">
+        <section class="main-section" id="section-3">
           <img class="main-section__image" />
           <div class="main-section__content">
             <h3 class="header">O projekcie</h3>
@@ -124,5 +130,7 @@
         </li>
       </ul>
     </footer>
+
+    <script src="../js/scrollAnimations.js"></script>
   </body>
 </html>
