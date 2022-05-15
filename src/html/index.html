@@ -19,6 +19,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
   </head>
 
   <body>
@@ -30,16 +31,18 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list__item">
-          <a class="nav__list__item__link" href="#">Start</a>
+          <a class="nav__list__item__link" data-to="start">Start</a>
         </li>
         <li class="nav__list__item">
-          <a class="nav__list__item__link" href="#">Programowanie</a>
+          <a class="nav__list__item__link" data-to="programing"
+            >Programowanie</a
+          >
         </li>
         <li class="nav__list__item">
-          <a class="nav__list__item__link" href="#">Muzyka</a>
+          <a class="nav__list__item__link" data-to="music">Muzyka</a>
         </li>
         <li class="nav__list__item">
-          <a class="nav__list__item__link" href="#">O projekcie</a>
+          <a class="nav__list__item__link" data-to="about">O projekcie</a>
         </li>
       </ul>
     </nav>
@@ -54,7 +57,7 @@
         <!-- <button class="main__hamburger-menu"></button> -->
         <!-- main-section may appear somewhere in the website  -->
         <section class="main-section" id="section-1">
-          <img class="main-section__image" />
+          <img class="main-section__image" src="../../assets/programing.jpg" />
           <div class="main-section__content">
             <h3 class="header">Programowanie</h3>
             <p class="paragraph">
@@ -74,7 +77,7 @@
         </section>
 
         <section class="main-section" id="section-2">
-          <img class="main-section__image" />
+          <img class="main-section__image" src="../../assets/music.jpg" />
           <div class="main-section__content">
             <h3 class="header">Muzyka</h3>
             <p class="paragraph">
@@ -94,7 +97,7 @@
         </section>
 
         <section class="main-section" id="section-3">
-          <img class="main-section__image" />
+          <img class="main-section__image" src="../../assets/about.jpg" />
           <div class="main-section__content">
             <h3 class="header">O projekcie</h3>
             <p class="paragraph">
