@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelka losowych liczb</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      tr {
+        height: 2vh;
+        margin: 0;
+        padding: 0;
+      }
+      td {
+        width: 4vw;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-align: center;
+      }
+
+      table:hover td {
+        opacity: 0;
+      }
+      td:hover {
+        opacity: 1 !important;
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <script>
+        for (let i = 0; i <= 50; i = i + 1) {
+          document.write(`<tr>`);
+
+          for (let i = 0; i <= 25; i = i + 1) {
+            document.write(`<td>${Math.floor(Math.random() * 500)}</td>`);
+          }
+
+          document.write(`</tr>`);
+        }
+      </script>
+    </table>
+  </body>
+</html>
